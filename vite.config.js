@@ -4,7 +4,7 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-import { visualizer } from 'rollup-plugin-visualizer' // 代码分析
+// import { visualizer } from 'rollup-plugin-visualizer' // 代码分析
 import compression from 'vite-plugin-compression' // gzip 压缩插件
 import { dateFormat } from './src/common.js'
 // import progress from 'vite-plugin-progress'
@@ -24,12 +24,12 @@ export default defineConfig(({mode}) =>{
         deleteOriginFile: false, // 是否删除源文件
         filter: /\.(js|css|html)$/i, // 可以手动指定哪些类型的文件需要压缩
       }),
-      visualizer({ // 代码分析
-        filename: 'report/report.html',  // 输出报告文件路径
-        open: true,                   // 构建后自动打开浏览器查看
-        gzipSize: true,               // 显示 gzip 大小
-        brotliSize: true              // 显示 brotli 大小
-      })
+      // visualizer({ // 代码分析
+      //   filename: 'report/report.html',  // 输出报告文件路径
+      //   open: true,                   // 构建后自动打开浏览器查看
+      //   gzipSize: true,               // 显示 gzip 大小
+      //   brotliSize: true              // 显示 brotli 大小
+      // })
     ],
     resolve: {
       alias: {  
