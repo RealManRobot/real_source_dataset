@@ -7,7 +7,7 @@
     "dev": "vite --mode development",
     "test": "vite build --mode test",
     "build": "vite build --mode production",
-    "deploy": "./_deployGithub.sh",
+    "deploy": "sh ./_deployGithub.sh",
     "preview": "vite preview",
     "viewProd": "npx serve dist"
   },
