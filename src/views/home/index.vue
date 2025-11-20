@@ -103,7 +103,7 @@
             <div class="f ac xc bdlc bdbc bdtc bdrc" style="width:100px;">30mm</div>
           </div>
         </div>
-        <img v-lazyImg="robotParams" class="db auto" style="width:80%;aspect-ratio: 2/1" alt="">
+        <img :src="robotParams" class="db auto" style="width:80%;aspect-ratio: 2/1" alt="">
       </div>
       <!--遥操作-->
       <div id="remoteOperaction" class="f ac fs30r b pb10r">遥操作</div>
