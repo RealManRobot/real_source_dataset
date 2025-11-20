@@ -7,7 +7,7 @@ export const routerList = Object.keys(r).reduce((prev, item) => [...prev, ...isA
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
-    { path: '/', redirect: { name: '/index', meta: {isShow: false}} },
+    // { path: '/', redirect: { name: '/index', meta: {isShow: false}} },
     ...routerList
   ]
 })
