@@ -11,7 +11,7 @@ import { dateFormat } from './src/common.js'
 export default defineConfig(({mode}) =>{
   // const isDev = mode === 'development'
   return {
-    base: './', // 打包资源路径，'./' 适用于相对路径部署；若部署到子路径，改为 '/子路径/'
+    base: '/real_source_dataset/', // 打包资源路径，'./' 适用于相对路径部署；若部署到子路径，改为 '/子路径/'
     plugins: [
       vue(),
       AutoImport({ resolvers: [ElementPlusResolver()] }), // 自动导入 Element Plus
