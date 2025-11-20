@@ -1,0 +1,13 @@
+.bdlc{
+  border-left: 1px solid #999 !important;
+}
+.bdl-fix-border::after{
+  content: '';
+  position: absolute;
+  width:1px;
+  height:22px;
+  border-left:1px solid #999;
+  /* background-color: #999;; */
+  left:0;
+  top:0px;
+}

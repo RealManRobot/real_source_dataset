@@ -1,0 +1,50 @@
+.blankBg::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("@/assets/grid_full_cells.png");
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+.hoverTagBg:hover::before{
+  content: '';
+  position: absolute;
+  transform: translateY(-50%);
+  top:50%;
+  opacity: .3;
+  border-radius: 30px;
+  width: 95%;
+  height:32px;
+  background:#ccc;
+}
+.hoverShadow:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 4px 0px;
+  transform: translateY(-5px);
+}
+
+.bdlc{
+  border-left: 1px solid #ccc;
+}
+.bdrc{
+  border-right: 1px solid #ccc;
+}
+.bdbc{
+  border-bottom: 1px solid #ccc;
+}
+.bdtc{
+  border-top: 1px solid #ccc;
+}
+.dot::before{
+  content: '';
+  position: absolute;
+  left: -10px;;
+  top: 10px;
+  width: 5px;
+  height:5px;
+  background-color: #000;
+  border-radius: 50%;
+}

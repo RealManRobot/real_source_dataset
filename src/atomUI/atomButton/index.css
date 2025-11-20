@@ -1,0 +1,63 @@
+/*2d-button*/
+.default-btn{border:1px solid #dcdee2}
+.default-btn:hover{background-color: #fff;color: #57a3f3;border-color: #57a3f3 !important;}
+.primary-btn{border:1px solid #57a3f3;background:#2d8cf0;color:#fff;}
+.primary-btn:hover{background:#57a3f3 !important;color:#fff;}
+.error-btn{border:1px solid #ed4014;background:#ed4014;color:#fff;}
+.error-btn:hover{background:#f16643 !important;color:#fff;}
+.warning-btn{ border:1px solid #ec6102;background:#ec6102;color:#fff;}
+.warning-btn:hover{border-color: #ff7a1a;background:#ff7a1a !important;color:#fff;}
+.success-btn{border:1px solid #19be6b;background:#19be6b;color:#fff;}
+.success-btn:hover{background:#47cb89 !important;color:#fff;}
+
+/*3d-button*/
+.basebtn{display: inline-block;display: flex;align-items: center;justify-content: center;border-radius: 8px;position: relative;border-top: 1px solid #fff;border-left: 1px solid #fff;outline: none;transition: all 0.1s ease-in-out;cursor: pointer;user-select: none;color: #fff;}
+.basebtn::before {content: '';position: absolute; width: 100%;height:10px; top:-8px;opacity: 0;/* background-color: pink; */}
+/*ccc*/
+.btn-3d-ccc {color: #000;background: linear-gradient(to bottom, #fdfdfd, #eee);box-shadow:inset 0 1px 0 #fff, 0 4px 0 #999, 0 4px 6px rgba(0, 0, 0, 0.2);border-top: 1px solid #eee;}
+.btn-3d-ccc:hover {background: linear-gradient(to bottom, #ffffff, #cfcfcf);}
+.btn-3d-ccc:active {transform: scale(0.98);box-shadow:inset 0 1px 0 #ccc,0 1px 0 #888,0 1px 4px rgba(0, 0, 0, 0.2);}
+/* ec6102 */
+.btn-3d-ec6102 {background: linear-gradient(to bottom, #ff9f3e, #ec6102); /* 渐变色从浅橙色到深橙色 */box-shadow:inset 0 1px 0 #fff,0 4px 0 #d34900, /* 深橙色阴影 */0 4px 6px rgba(0, 0, 0, 0.2); /* 外部投影 */}
+.btn-3d-ec6102:hover {background: linear-gradient(to bottom, #ff9f3e, #f47f2c); /* 鼠标悬停时使用稍浅的渐变 */}
+.btn-3d-ec6102:active {transform: scale(0.98);box-shadow:inset 0 1px 0 #e85d0d, /* 按下时的内阴影 */0 1px 0 #b64000, /* 更深的外阴影 */0 1px 4px rgba(0, 0, 0, 0.2);}
+/*ed4014*/
+.btn-3d-ed4014 {background: linear-gradient(to bottom, #f7a39c, #ed4014); /* 使用渐变色 */box-shadow:inset 0 1px 0 #fff,0 4px 0 #cc2f11, /* 使用稍深的阴影 */0 4px 6px rgba(0, 0, 0, 0.2);}
+.btn-3d-ed4014:hover {background: linear-gradient(to bottom, #fcbdb2, #ec5729); /* 鼠标悬停时使用浅一点的渐变 */}
+.btn-3d-ed4014:active {transform: scale(0.98);box-shadow:inset 0 1px 0 #d44b1a, /* 活跃状态阴影稍深 */0 1px 0 #a42f12, /* 更深的阴影效果 */0 1px 4px rgba(0, 0, 0, 0.2);}
+/* 1890ff */
+.btn-3d-1890ff {background: linear-gradient(to bottom, #8fbfff, #1890ff); /* 渐变色从浅蓝到深蓝 */box-shadow:inset 0 1px 0 #fff,0 4px 0 #1465b3, /* 深色阴影 */0 4px 6px rgba(0, 0, 0, 0.2); /* 外部投影 */}
+.btn-3d-1890ff:hover {background: linear-gradient(to bottom, #76aaff, #1571cc); /* 鼠标悬停时使用浅蓝渐变 */}
+.btn-3d-1890ff:active {transform: translateY(3px) scale(0.98);box-shadow:inset 0 1px 0 #166da3, /* 按下时的内阴影 */0 1px 0 #0f5592, /* 更深的外阴影 */0 1px 4px rgba(0, 0, 0, 0.2);}
+/* 2fa800 */
+.btn-3d-2fa800 {background: linear-gradient(to bottom, #66d96c, #2fa800); /* 渐变色从浅绿色到深绿色 */box-shadow:inset 0 1px 0 #fff,0 4px 0 #258d00, /* 深绿色阴影 */0 4px 6px rgba(0, 0, 0, 0.2); /* 外部投影 */}
+.btn-3d-2fa800:hover {background: linear-gradient(to bottom, #54d05e, #219400); /* 鼠标悬停时使用稍浅的渐变 */}
+.btn-3d-2fa800:active {transform: translateY(3px) scale(0.98);box-shadow:inset 0 1px 0 #2b8600, /* 按下时的内阴影 */0 1px 0 #1d6f00, /* 更深的外阴影 */0 1px 4px rgba(0, 0, 0, 0.2);}
+
+/*按钮loading样式*/
+.loading {
+  width: 12px;
+  height: 12px;
+  margin-left:3px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: circle infinite 0.75s linear;
+}
+@keyframes circle {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+/* tag按钮 */
+.tag-28c76f{background: rgba(40, 199, 111, 0.1);border: 1px solid #28c76f;color: #28c76f;}
+.tag-ffa439{background: rgba(255,164,57,0.1);border: 1px solid #FFA439;color:#FFA439;}
+.tag-ff0000{background: rgb(255, 0, 0, .1);border: 1px solid #ff0000;color:#ff0000;}
+.tag-1890ff{background: rgb(24, 144, 255, .1);border: 1px solid #1890ff;color:#1890ff;}
+.tag-ccc{background: rgb(204, 204, 204, .1);border: 1px solid #ccc;color:#ccc;}
+/* tag按钮 */
+.underline-28c76f{color: #28c76f;}
+.underline-ffa439{color:#FFA439;}
+.underline-ff0000{color:#ff0000;}
+.underline-1890ff{color:#1890ff;}
+.underline-ccc{color:#ccc;}

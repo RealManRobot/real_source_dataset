@@ -1,0 +1,29 @@
+.renderloading {
+  width: 85px;
+  height: 85px;
+  border: 2px solid #409eff;
+  border-top-color: transparent !important;
+  border-radius: 50%;
+  animation: myCircle infinite 0.75s linear;
+}
+@keyframes myCircle {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+/*无限时间loading*/
+.yLoading {
+  width: 35px;
+  height: 35px;
+  border-top-color: transparent !important;
+  border-radius: 50%;
+  animation: myCircle infinite 0.75s linear;
+}
+/*无限时间loading*/
+.xLoading {
+  width: 20px;
+  height: 20px;
+  border-top-color: transparent !important;
+  border-radius: 50%;
+  animation: myCircle infinite 0.75s linear;
+}
+

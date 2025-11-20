@@ -1,0 +1,4 @@
+.text-container:hover .msgTip{
+  visibility: var(--visibility)
+}
+.nowrap3{min-width:0;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}

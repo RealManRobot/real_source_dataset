@@ -1,0 +1,9 @@
+.customCss-input-search{
+  padding-left:35px;
+}
+.customCss-input-close{
+  padding-right:35px;
+}
+.input-border:hover{ border-color:#57a3f3 !important;}
+.input-border:focus{border-color:#57a3f3 !important;}
+.bdAndNone{border:1px solid #dcdee2;outline:none;}

@@ -1,0 +1,13 @@
+.not-open-switch{
+  left:3px;
+}
+.open-switch{
+  left:23px;
+}
+.switch-box:active .not-open-switch{
+  width:23px !important;
+}
+.switch-box:active .open-switch{
+  left:18px;
+  width:23px !important;
+}

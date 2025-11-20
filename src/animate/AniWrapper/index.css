@@ -1,0 +1,71 @@
+/* ========== 淡入淡出 ========== */
+.transition-fade-enter-active,
+.transition-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.transition-fade-enter-from,
+.transition-fade-leave-to {
+  opacity: 0;
+}
+
+/* ========== 向上滑入 ========== */
+.transition-slide-up-enter-active,
+.transition-slide-up-leave-active {
+  transition: all 0.3s ease;
+}
+.transition-slide-up-enter-from,
+.transition-slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* ========== 向下滑入 ========== */
+.transition-slide-down-enter-active,
+.transition-slide-down-leave-active {
+  transition: all 0.3s ease;
+}
+.transition-slide-down-enter-from,
+.transition-slide-down-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* ========== 向左滑入 ========== */
+.transition-slide-left-enter-active,
+.transition-slide-left-leave-active {
+  transition: all 0.3s ease;
+}
+.transition-slide-left-enter-from,
+.transition-slide-left-leave-to {
+  opacity: 0;
+  transform: translateX(10px);
+}
+
+/* ========== 向右滑入 ========== */
+.transition-slide-right-enter-active,
+.transition-slide-right-leave-active {
+  transition: all 0.3s ease;
+}
+.transition-slide-right-enter-from,
+.transition-slide-right-leave-to {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+/* ========== 缩放 ========== */
+/* ✅ 修正版：缩放动画 */
+.transition-zoom-enter-active,
+.transition-zoom-leave-active {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center center; /* 保证从中心缩放 */
+}
+.transition-zoom-enter-from,
+.transition-zoom-leave-to {
+  opacity: 0;
+  transform: scale(0.8); /* 缩小进入、缩小离开 */
+}
+.transition-zoom-enter-to,
+.transition-zoom-leave-from {
+  opacity: 1;
+  transform: scale(1);
+}

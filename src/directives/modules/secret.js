@@ -1,0 +1,19 @@
+/**
+ * @举例 
+ * v-secret  手机号、身份证号、银行卡号增加星号
+ * // 会将这个身份证增加星号处理
+ * <div v-secret>{{patientObj.idNumber}}</div> 
+ */
+export const secret = {
+  mounted(el, {value}, vnode) {
+    // const [left = 3, right = -4] = value
+    let text = el.innerText
+    if(!text) { return }
+    if(text.length > 11) {
+      text = text.slice(0, 6) + '********' + text.slice(-4)
+    } else if(text.length > 7){
+      text = text.slice(0, 3) + '****' + text.slice(-4)
+    }
+    el.innerText = text
+  },
+}

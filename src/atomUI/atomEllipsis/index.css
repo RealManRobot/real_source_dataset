@@ -1,0 +1,18 @@
+.dot {
+  opacity: 0;
+  animation: blink 1.5s infinite;
+}
+.dot-1 {
+  animation-delay: 0s;
+}
+.dot-2 {
+  animation-delay: 0.3s;
+}
+.dot-3 {
+  animation-delay: 0.6s;
+}
+@keyframes blink {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  100% { opacity: 0; }
+}

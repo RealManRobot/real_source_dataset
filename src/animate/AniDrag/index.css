@@ -1,0 +1,13 @@
+
+.moveing {
+  opacity: 0;
+}
+.list-move,
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.3s ease;
+}
+.flexAuto::after{
+  content: "";
+  flex: auto; /* 占位用，防止最后一行被拉开 */
+}

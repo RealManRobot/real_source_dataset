@@ -1,0 +1,48 @@
+/*raidoBox*/
+.radioBorder::before{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: 3;
+  top:50%;
+  left:0;
+  width:16px;
+  height:16px;
+  border: 1px solid #dcdee2;
+  transform: translateY(-50%);
+}
+/* hover 效果 */
+.radioBorder:hover::before {
+  background: linear-gradient(145deg, #fafafa, #eaeaea);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1),
+              inset 1px 1px 2px rgba(0,0,0,0.05);
+}
+.checkedRaido::before{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: 3;
+  top:50%;
+  left:0;
+  width:16px;
+  height:16px;
+  border: 1px solid #1890ff;
+  /* box-shadow: inset 1px 1px 2px rgba(255,255,255,0.3),
+              inset -1px -1px 2px rgba(0,0,0,0.1),
+              0 2px 5px rgba(24,144,255,0.35); */
+  transform: translateY(-50%) scale(1.1);
+  transition: all 0.25s ease;
+}
+.checkedRaido::after{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top:50%;
+  left:4px;
+  transform:translateY(-50%)  scale(1.1);
+  width:10px;
+  height:10px;
+  background:#1890ff;
+  box-shadow: 0 0 1em 0 #1890ff;
+  transition: all 0.25s ease;
+}
