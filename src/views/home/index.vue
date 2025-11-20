@@ -41,6 +41,9 @@
           <div class="fs20 b mb20r">{{item.name}}</div>
           <div class="fs14">{{item.desc}}</div>
         </div>
+        <div style="width: clamp(290px, 32%, 500px)"></div>
+        <div style="width: clamp(290px, 32%, 500px)"></div>
+        <div style="width: clamp(290px, 32%, 500px)"></div>
       </div>
       <!--完整数据模态-->
       <div id="dataModality" class="f ac fs30r b pb10r">完整数据模态</div>
@@ -59,6 +62,9 @@
             <div>{{item.tip}}</div>
           </div>
         </div>
+        <div style="width: clamp(290px, 23%, 360px)"></div>
+        <div style="width: clamp(290px, 23%, 360px)"></div>
+        <div style="width: clamp(290px, 23%, 360px)"></div>
       </div>
       <!--轮播视频-->
       <div id="video" class="f ac fs30r b pb10r">轮播视频</div>

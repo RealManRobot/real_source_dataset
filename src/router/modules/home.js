@@ -17,8 +17,8 @@ export default [
   //   ]
   // },
   {
-    path: '/',
-    name: '/',
+    path: '/index',
+    name: '/index',
     meta: { title: '数据采集系统', sort: 1, isShow: true},
     component: () => import(/* webpackChunkName: "index" */'../../views/home/index.vue'),
   },
