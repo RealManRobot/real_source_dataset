@@ -109,7 +109,7 @@
         </div>
       </div>
       <div class="trans3 rds10 fs16 borderBox mb50" >
-        <div class="f xb" style="gap: 0 20px;">
+        <div class="f rw xb" style="gap: 20px 20px;">
           <div class="rds20" style="width:280px;background: linear-gradient(to bottom, #195DE3 0%, #A2BDEC 100%);">
             <div class="fs20 b mb5 gf f ac xc pt20">RS-01</div>
             <div class="fs20 b mb5 gf f xc mb30 pl10 pr10 wrap" style="min-height:80px;">{{$t('wheeled_humanoid_robot')}}</div>
@@ -125,7 +125,7 @@
             <div class="fs20 b mb5 gf f  xc mb30 pl10 pr10 wrap" style="min-height:80px;">{{$t('enhanced_version_with_both_arm_eyes')}}</div>
             <img src="@/assets/RS03.png" style="width:192px;height:411px;margin-left:40px;" class="" alt="">
           </div>
-          <div class="rds20 borderBox pt20 pb10 pl30 pr30 f1" style="background: linear-gradient(to bottom, #b6cdf4 0%, #f1f9ff 100%);;">
+          <div class="rds20 borderBox pt20 pb10 pl30 pr30 f1" style="min-width:400px;background: linear-gradient(to bottom, #b6cdf4 0%, #f1f9ff 100%);;">
             <div class="g0 fs24 f ac xc pb10">{{ $t('high_load_ranked_first') }}</div>
             <div class="g6 fs16 pb20" style="border-bottom:1px solid #fff;">{{ $t('high_load_ranked_first_desc') }}</div>
             <div class="g0 fs24 f ac xc pt10 pb10">{{$t('multimodal_visual_perception')}}</div>
