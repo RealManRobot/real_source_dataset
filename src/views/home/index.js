@@ -53,8 +53,8 @@ export default function (props, emit) {
       setLocale('zh')
     }
   }
-  function goUrl(){
-    window.open('https://develop.realman-robotics.com/datatraining/guide/datacollectionrobot/', '_blank');
+  function goUrl(url, target = '_blank'){
+    window.open(url, target);
   }
   onMounted(() => {
     
