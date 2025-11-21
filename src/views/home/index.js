@@ -53,12 +53,15 @@ export default function (props, emit) {
       setLocale('zh')
     }
   }
+  function goUrl(){
+    window.open('https://develop.realman-robotics.com/datatraining/guide/datacollectionrobot/', '_blank');
+  }
   onMounted(() => {
     
   })
   return {
     routeList, dataModalList, mainAdvantageList, remoteAdvantageList, language,
     damoyuan_logo, robotParams,
-    emit, goCurId, toggleLanguage,
+    emit, goCurId, toggleLanguage, goUrl
   }
 }

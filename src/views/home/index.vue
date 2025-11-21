@@ -52,7 +52,7 @@
       <div id="dataModality" class="f ac fs30r b pb10r">完整数据模态</div>
       <div class="fs16r f ac mb30r" style="color:#4b5563">涵盖机器人感知、决策、执行的全链路多模态数据</div>
       <div class="f ac xb rw auto mb50" style="gap:20px;">
-        <div v-for="item in dataModalList" :key="item.id" class="trans3 poi rds10 hoverShadow pl30r pr30r pt30r pb30r bgf borderBox" style="height:230px;width: clamp(290px, 22%, 360px)">
+        <div v-for="item in dataModalList" :key="item.id" class="trans3 poi rds10 hoverShadow pl30r pr30r pt30r pb30r bgf borderBox" style="height:230px;width: clamp(240px, 22%, 360px)">
           <div class="f ac xc">
             <div class="rds50 f ac xc" :style="{width:'70px', height:'70px',background: item.background}">
               <atomSvg :type="item.svg" width="28" height="28" :color="item.svgColor"></atomSvg>
@@ -75,7 +75,12 @@
       
       <!--数据机器人采集平台-->
       <div id="robotPlatform" class="f ac fs30r b pb10r">数据机器人采集平台</div>
-      <div class="fs16r f ac  mb30r" style="color:#4b5563">先进的本体才能产生高质量的数据，专为数采而生的机器人</div>
+      <div class="fs16r dib mb30r poi hover1890ff g4b5563 borderBox" @click="goUrl">
+        <div class="f">
+          <atomSvg type="tip" width="24" height="24" color="#1890ff"></atomSvg>
+          先进的本体才能产生高质量的数据，专为数采而生的机器人
+        </div>
+      </div>
       <div class="trans3 rds10 fs16 borderBox mb50" >
         <div class="f xb" style="gap: 0 20px;">
           <div class="rds20" style="width:270px;background: linear-gradient(to bottom, #195DE3 0%, #A2BDEC 100%);">
