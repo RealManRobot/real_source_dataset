@@ -36,7 +36,7 @@ export default function (props, emit) {
     {id: _.guID(), background: '#FAF5FF', dotBg: '#8B5CF6', name:'计算效率高，实时性强', descList: ['简化了运动学和动力学计算，提高控制系统运算效率。', '无需SoC等高性能计算单元即可达到高响应频率，系统延迟可控制在 10ms 以内。']},
     {id: _.guID(), background: '#F0FDFA', dotBg: '#06B6D4', name:'操作直观，学习成本低', descList: ['操作者动作与机器人动作完全一致，增强使用者操作的直观性，降低培训成本']},
   ])
-
+  const language = ref('chinese')
   function goCurId(id){
     nextTick(() => {
       const el = _.getDom(id)
@@ -47,7 +47,7 @@ export default function (props, emit) {
     
   })
   return {
-    routeList, dataModalList, mainAdvantageList, remoteAdvantageList, 
+    routeList, dataModalList, mainAdvantageList, remoteAdvantageList, language,
     damoyuan_logo, robotParams,
     emit, goCurId,
   }

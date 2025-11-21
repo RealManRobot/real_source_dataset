@@ -21,6 +21,9 @@
           {{item.name}}
         </div>
       </div>
+      <div @click="language = language == 'chinese' ? 'english' : 'chinese' " class="abs zx10 poi" style="top:10px;right:10px;">
+        <atomSvg :type="language" width="32" height="32" color="#ffffff"></atomSvg>
+      </div>
     </div>
     <!--下面-->
     <div class="w80 auto pt50r">
