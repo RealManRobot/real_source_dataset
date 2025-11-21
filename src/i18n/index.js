@@ -6,7 +6,7 @@ import { getLocalStorage, setLocalStorage } from "@/common.js"
 // 所有语言包
 export const messages = { zh, en }
 // 当前语言（响应式）
-export const currentLocale = ref(getLocalStorage('z-language') || 'zh')
+export const currentLocale = ref(getLocalStorage('z-language') || 'en')
 /**
  * 切换语言
  * @param {string} locale 语言标识（如 'en' 'zh'）
