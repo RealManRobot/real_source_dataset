@@ -1,12 +1,17 @@
 <template>
   <div class="rel ovya pb100" style="background-color: #e7ecf3;">
     <div class="gf rel blankBg" style="background:linear-gradient(135deg, #1e293b 0%, #334155 100%);padding:60px 30px 120px">
-      <div class="lt5r fs14r mb10r g9 pl7">REALMAN ROBOTICS</div>
-      <div class="f ac">
-        <div class="b lt2r" style="font-size:0.52rem;background: linear-gradient(135deg, #3b82f6, #8b5cf6);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text;">
-          Real Source World
+      <div class="f">
+        <img src="@/assets/logo.png" style="width:90px;height:90px;" class="mr20" alt="">
+        <div >
+          <div class="lt5r fs14r mb10r g9 pl7">REALMAN ROBOTICS</div>
+          <div class="f ac">
+            <div class="b lt2r" style="font-size:0.52rem;background: linear-gradient(135deg, #3b82f6, #8b5cf6);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text;">
+              Real Source World
+            </div>
+            <!-- <div class="pl10r b" style="font-size:0.52rem;">数据采集系统</div> -->
+          </div>
         </div>
-        <!-- <div class="pl10r b" style="font-size:0.52rem;">数据采集系统</div> -->
       </div>
       <div class="pt30r fs20r w90" style="color:rgb(229 231 235 / var(--tw-text-opacity, 1))">
         {{$t('head_text') }}
@@ -21,7 +26,7 @@
           {{item.name}}
         </div>
       </div>
-      <div @click="toggleLanguage" class="abs zx10 poi" style="top:10px;right:10px;">
+      <div @click="toggleLanguage" class="abs zx10 poi " style="top:10px;right:10px;">
         <atomSvg :type="currentLocale" width="32" height="32" color="#ffffff"></atomSvg>
       </div>
       <div @click="" class="abs r0 b0" style="bottom:10px;right:10px;">
