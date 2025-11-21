@@ -1,10 +1,11 @@
 import { onMounted, ref, nextTick } from 'vue'
 import damoyuan_logo from "@/assets/damoyuan_logo.webp"
 import robotParams from "@/assets/robotParams.png"
+import {setLocale} from "@/i18n/index.js"
 export default function (props, emit) {
   const routeList = ref([
     // {id: _.guID(), name:'合作公司', id:'partnerCompany'},
-    {id: _.guID(), name:'核心优势', id:'mainAdvance'},
+    {id: _.guID(), name: '核心优势', id:'mainAdvance'},
     {id: _.guID(), name:'完整数据模态', id:'dataModality'},
     {id: _.guID(), name:'轮播视频', id:'video'},
     {id: _.guID(), name:'数据机器人采集平台', id:'robotPlatform'},
@@ -43,12 +44,21 @@ export default function (props, emit) {
       if(el) el.scrollIntoView({ behavior: 'smooth'})
     })
   }
+  function toggleLanguage(){
+    if(language.value == 'chinese') {
+      language.value = 'english'
+      setLocale('en')
+    } else {
+      language.value = 'chinese'
+      setLocale('zh')
+    }
+  }
   onMounted(() => {
     
   })
   return {
     routeList, dataModalList, mainAdvantageList, remoteAdvantageList, language,
     damoyuan_logo, robotParams,
-    emit, goCurId,
+    emit, goCurId, toggleLanguage,
   }
 }

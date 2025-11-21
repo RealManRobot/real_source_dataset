@@ -1,5 +1,5 @@
 export default {
-  confirm: "confirm",
+  quick_navigation: "quick navigation",
   cancel: "cancel",
   submit: "submit",
   login: "login",

@@ -12,7 +12,7 @@
         全球首个高质量、模态数量最多的机器人开源真机数据集
       </div>
       <div class="auto rds30 f ac mt30 fd pl10 pr5" style="width:900px;background:#131c2f;">
-        <div class="f1 pt12 pb12 f ac xc gc">快速导航</div>
+        <div class="f1 pt12 pb12 f ac xc gc">{{$t('quick_navigation') }}</div>
         <div
           v-for="item in routeList" :key="item.id" 
           class="f1 pt12 pb12 f ac xc poi rel hoverTagBg"
@@ -21,9 +21,9 @@
           {{item.name}}
         </div>
       </div>
-      <div @click="language = language == 'chinese' ? 'english' : 'chinese' " class="abs zx10 poi" style="top:10px;right:10px;">
+      <!-- <div @click="toggleLanguage" class="abs zx10 poi" style="top:10px;right:10px;">
         <atomSvg :type="language" width="32" height="32" color="#ffffff"></atomSvg>
-      </div>
+      </div> -->
     </div>
     <!--下面-->
     <div class="w80 auto pt50r">

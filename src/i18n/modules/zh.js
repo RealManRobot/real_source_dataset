@@ -1,5 +1,5 @@
 export default {
-  confirm: "确认",
+  quick_navigation: "快速导航",
   cancel: "取消",
   submit: "提交",
   login: "登录",
