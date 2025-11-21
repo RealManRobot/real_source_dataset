@@ -106,7 +106,7 @@
       </div>
       <!--遥操作-->
       <div id="remoteOperaction" class="f ac fs30r b pb10r">遥操作</div>
-      <img src="@/assets/remote_operation.png" style="width:720px;height:405px;" class="db auto" alt="" />
+      <img src="@/assets/remote_operation.png" style="width:720px;height:405px;" class="db auto rds10" alt="" />
       <div class="fs16r f ac mb30r  mb40r" style="color:#4b5563">三大优势</div>
       <div class="f rw xb auto" style="gap:20px 0;">
         <div v-for="item in remoteAdvantageList" :key="item.id" class=" trans3 poi bgf ovh rds10 hoverShadow" style="height:190px;width: clamp(320px, 32%, 500px)">
