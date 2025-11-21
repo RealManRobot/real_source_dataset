@@ -48,3 +48,6 @@
   background-color: #000;
   border-radius: 50%;
 }
+.roboxBox{
+  background: url('@/assets/robotBg.png') no-repeat center / cover;
+}

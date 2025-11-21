@@ -47,9 +47,9 @@
       </div>
       <!--完整数据模态-->
       <div id="dataModality" class="f ac fs30r b pb10r">完整数据模态</div>
-      <div class="fs16r f ac mb40r" style="color:#4b5563">涵盖机器人感知、决策、执行的全链路多模态数据</div>
+      <div class="fs16r f ac mb30r" style="color:#4b5563">涵盖机器人感知、决策、执行的全链路多模态数据</div>
       <div class="f ac xb rw auto mb50" style="gap:20px;">
-        <div v-for="item in dataModalList" :key="item.id" class="trans3 poi rds10 hoverShadow pl30r pr30r pt30r pb30r bgf borderBox" style="height:230px;width: clamp(290px, 23%, 360px)">
+        <div v-for="item in dataModalList" :key="item.id" class="trans3 poi rds10 hoverShadow pl30r pr30r pt30r pb30r bgf borderBox" style="height:230px;width: clamp(290px, 22%, 360px)">
           <div class="f ac xc">
             <div class="rds50 f ac xc" :style="{width:'70px', height:'70px',background: item.background}">
               <atomSvg :type="item.svg" width="28" height="28" :color="item.svgColor"></atomSvg>
@@ -72,48 +72,47 @@
       
       <!--数据机器人采集平台-->
       <div id="robotPlatform" class="f ac fs30r b pb10r">数据机器人采集平台</div>
-      <div class="trans3 rds10 pl30r pr30r pt30r pb30r bgf fs16 borderBox mb50" >
-        <div class="">
-          <div class="f xc tc">
-            <div class="f ac xc bdlc  bdtc " style="width:100px;">自由度</div>
-            <div class="f ac xc bdlc  bdtc " style="width:100px;">21个</div>
-            <div class="f ac xc bdlc  bdtc" style="width:100px;">工作范围</div>
-            <div class="bdlc bdtc pt10 pb10 tl pl10"  style="width:140px;">
-              <div>上下：2000mm</div>
-              <div>左右：1900mm</div>
-              <div>向前：600mm</div>
-            </div>
-            <div class="f ac xc bdlc  bdtc" style="width:140px;">重量</div>
-            <div class="f ac xc bdlc  bdtc " style="width:100px;">90kg</div>
-            <div class="f ac xc bdlc  bdtc " style="width:100px;">最大单臂负载</div>
-            <div class="f ac xc bdlc  bdtc " style="width:100px;">9KG</div>
-            <div class="f ac xc bdlc  bdtc " style="width:100px;">感知范围</div>
-            <div class="f ac xc bdlc  bdtc bdrc" style="width:100px;">360°</div>
+      <div class="fs16r f ac  mb30r" style="color:#4b5563">先进的本体才能产生高质量的数据，专为数采而生的机器人</div>
+      <div class="trans3 rds10 fs16 borderBox mb50" >
+        <div class="f xb" style="gap: 0 20px;">
+          <div class="rds20" style="width:270px;background: linear-gradient(to bottom, #195DE3 0%, #A2BDEC 100%);">
+            <div class="fs20 b mb5 gf f ac xc pt20">RS-01</div>
+            <div class="fs20 b mb5 gf f ac xc mb30">轮式人形机器人</div>
+            <img src="@/assets/RS01.png" style="width:192px;height:411px;margin-left:52px;" class="" alt="">
           </div>
-          <div class="f xc">
-            <div class="f ac xc bdlc bdbc bdtc pt20 pb20" style="width:100px;">手臂自由度</div>
-            <div class="f ac xc bdlc bdbc bdtc " style="width:100px;">7个</div>
-            <div class="f ac xc bdlc bdbc bdtc" style="width:100px;">单臂范围</div>
-            <div class="f ac xc bdlc bdbc bdtc pl10" style="width:140px;">610mm</div>
-            <div class="f ac xc bdlc bdbc bdtc" style="width:140px;">手臂重复定位精度</div>
-            <div class="f ac xc bdlc bdbc bdtc " style="width:100px;">±0.05mm</div>
-            <div class="f ac xc bdlc bdbc bdtc " style="width:100px;">工作时长</div>
-            <div class="f ac xc bdlc bdbc bdtc " style="width:100px;">6H</div>
-            <div class="f ac xc bdlc bdbc bdtc " style="width:100px;">越障能力</div>
-            <div class="f ac xc bdlc bdbc bdtc bdrc" style="width:100px;">30mm</div>
+          <div class="rds20" style="width:270px;background: linear-gradient(to bottom, #195DE3 0%, #A2BDEC 100%);">
+            <div class="fs20 b mb5 gf f ac xc pt20">RS-01</div>
+            <div class="fs20 b mb5 gf f ac xc mb30">轮式人形机器人</div>
+            <img src="@/assets/RS02.png" style="width:192px;height:411px;margin-left:40px;" class="" alt="">
+          </div>
+          <div class="rds20" style="width:270px;background: linear-gradient(to bottom, #195DE3 0%, #A2BDEC 100%);">
+            <div class="fs20 b mb5 gf f ac xc pt20">RS-01</div>
+            <div class="fs20 b mb5 gf f ac xc mb30">轮式人形机器人</div>
+            <img src="@/assets/RS03.png" style="width:192px;height:411px;margin-left:40px;" class="" alt="">
+          </div>
+          <div class="rds20 borderBox pt20 pb10 pl30 pr30 f1" style="background: linear-gradient(to bottom, #b6cdf4 0%, #f1f9ff 100%);;">
+            <div class="g0 fs24 f ac xc pb10">高负载自重比-全球第一</div>
+            <div class="g6 fs16 pb20" style="border-bottom:1px solid #fff;">负载自重比1:1.44；额定负载5kg；整机20个自由度（右臂=7，左臂=7，腰部=3，膝部=1，颈部=2）</div>
+            <div class="g0 fs24 f ac xc pt10 pb10">多模态视觉感知</div>
+            <div class="g6 fs16 pb20" style="border-bottom:1px solid #fff;">RGB、深度相机；支持硬同步</div>
+            <div class="g0 fs24 f ac xc pt10 pb10">集成式六维力传感</div>
+            <div class="g6 fs16 pb20" style="border-bottom:1px solid #fff;">集成六维力传感器，六维力量程：200N /7Nm，六维力精度：&lt;0.1% FS</div>
+            <div class="g0 fs24 f ac xc pt10 pb10">泛化操作末端器</div>
+            <div class="g6 fs16 pb20" style="border-bottom:1px solid #fff;">适应多种型号2指夹爪，3指夹爪，5指灵巧手</div>
+            <div class="g0 fs24 f ac xc pt10 pb10">空间感知</div>
+            <div class="g6 fs16 pb20" style="border-bottom:1px solid #fff;">深度智能相机，IMU+编码器;激光雷达、安全触边；超声波</div>
           </div>
         </div>
-        <img :src="robotParams" class="db auto" style="width:80%;aspect-ratio: 2/1" alt="">
       </div>
       <!--遥操作-->
       <div id="remoteOperaction" class="f ac fs30r b pb10r">遥操作</div>
       <img src="@/assets/remote_operation.png" style="width:720px;height:405px;" class="db auto" alt="" />
-      <div class="fs16r f ac mt40r  mb40r" style="color:#4b5563">三大优势</div>
+      <div class="fs16r f ac mb30r  mb40r" style="color:#4b5563">三大优势</div>
       <div class="f rw xb auto" style="gap:20px 0;">
         <div v-for="item in remoteAdvantageList" :key="item.id" class=" trans3 poi bgf ovh rds10 hoverShadow" style="height:190px;width: clamp(320px, 32%, 500px)">
           <div class="f ac pl20r pr30r pt15r pb15r" :style="{background: item.background}">
             <div class="rds50 mr10" :style="{width:'10px',height:'10px',background: item.dotBg}"></div>
-            <div class="b fs16">映射关系直接，无需复杂解算</div>
+            <div class="b fs16">{{ item.name }}</div>
           </div>
           <div class="pl30r pr30r pt30r pb30r">
             <div v-for="(desc, index) in item.descList" :key="index" class="rel dot mb10 fs14">{{ desc }}</div>
