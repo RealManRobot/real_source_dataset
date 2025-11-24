@@ -101,9 +101,9 @@
             <div>{{item.tip}}</div>
           </div>
         </div>
-        <div style="width: clamp(290px, 23%, 360px)"></div>
-        <div style="width: clamp(290px, 23%, 360px)"></div>
-        <div style="width: clamp(290px, 23%, 360px)"></div>
+        <div style="width: clamp(240px, 22%, 360px)"></div>
+        <div style="width: clamp(240px, 22%, 360px)"></div>
+        <div style="width: clamp(240px, 22%, 360px)"></div>
       </div>
       <!--数据机器人采集平台-->
       <div id="robotPlatform" class="f ac fs30r b pb10r">{{$t('robot_collection_plat')}}</div>
