@@ -6,9 +6,10 @@ import { t } from "@/i18n/index.js" // i18n 国际化
 export default function (props, emit) {
   const routeList = ref([
     // {id: _.guID(), name:'合作公司', id:'partnerCompany'},
+    {id: _.guID(), name: t('open_source_address'), id:'sourceAddress'},
     {id: _.guID(), name: t('core_strengths'), id:'mainAdvance'},
     {id: _.guID(), name: t('all_data_modality'), id:'dataModality'},
-    {id: _.guID(), name: t('carousel_video'), id:'video'},
+    // {id: _.guID(), name: t('carousel_video'), id:'video'},
     {id: _.guID(), name: t('data_robot_collection_platform'), id:'robotPlatform'},
     {id: _.guID(), name: t('Teleoperation'), id:'remoteOperaction'},
   ])
