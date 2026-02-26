@@ -179,7 +179,8 @@
             </div>
           </div>
           <div class="f ac xc" style="flex: 1; min-width: 0;">
-            <img v-lazyImg="robotParams" class="platform-img db" alt="Robot Platform">
+            <img src="@/assets/RS02_front.png" class="platform-img db" alt="Robot Platform">
+            <img src="@/assets/RS02_side.png" class="platform-img db" alt="Robot Platform">
           </div>
         </div>
       </div>
