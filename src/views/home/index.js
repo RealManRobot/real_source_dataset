@@ -100,7 +100,7 @@ export default function (props, emit) {
 
   // 机器人平台参数
   const robotSpecs = ref([
-    { label: t('freedom_degree'),          value: '21个' },
+    { label: t('freedom_degree'),          value: '21' },
     { label: t('work_range'),        value: `${currentLocale.value == 'zh' ? '上下' : 'up and down'} 2000mm / ${currentLocale.value == 'zh' ? '左右' : 'left and right'} 1900mm / ${currentLocale.value == 'zh' ? '向前' : 'forward'} 600mm` },
     { label: t('weight'),            value: '90kg' },
     { label: t('max_single_arm_load'),    value: '9KG' },
