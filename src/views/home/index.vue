@@ -178,9 +178,11 @@
               </div>
             </div>
           </div>
-          <div class="f ac xc" style="flex: 1; min-width: 0;">
-            <img src="@/assets/RS02_front.png" class="platform-img db" alt="Robot Platform">
-            <img src="@/assets/RS02_side.png" class="platform-img db" alt="Robot Platform">
+          <div class="f ac xc rw" style="flex: 1; min-width: 0;">
+            <img src="@/assets/RS02_front.png" class="w50 db" alt="Robot Platform">
+            <img src="@/assets/RS02_side.png" class="w50 db" alt="Robot Platform">
+            <img src="@/assets/RS02_left.png" class="w50 db" alt="Robot Platform">
+            <img src="@/assets/RS02_right.png" class="w50 db" alt="Robot Platform">
           </div>
         </div>
       </div>
