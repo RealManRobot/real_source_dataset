@@ -316,11 +316,11 @@
    ============================================= */
 .video-section {
   background: var(--ds-surface-dark);
-  padding: 120px 40px;
+  padding:  60px 240px;
 }
 
 .video-inner {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
@@ -329,7 +329,7 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   aspect-ratio: 16 / 9;
-  max-width: 960px;
+  /* max-width: 960px; */
   margin: 0 auto;
 }
 

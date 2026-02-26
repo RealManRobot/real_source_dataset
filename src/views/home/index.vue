@@ -4,11 +4,11 @@
       <atomSvg :type="currentLocale" width="32" height="32" color="#ffffff"></atomSvg>
     </div>
     <div @click="" class="abs r0 b0 zx100" style="bottom:10px;right:10px;">
-      <div class="f gf mb5 fs16 contact">
+      <div class="f gf mb5 fs16">
         <div class="pr2 ">{{ $t('telephone') }}：</div>
         <div class="">400-898-2018</div>
       </div>
-      <div class="f gf fs16 contact">
+      <div class="f gf fs16">
         <div class="pr2">{{$t('email')}}：</div>
         <div class="">realsource@realman-robot.com</div>
       </div>
@@ -133,10 +133,10 @@
       v-intersect="{ handler: onSectionVisible, options: { threshold: 0.2 }, once: true }"
     >
       <div class="video-inner">
-        <div id="video" class="section-header section-visible">
+        <!-- <div id="video" class="section-header section-visible">
           <div class="section-label">VIDEO SHOWCASE</div>
           <div class="section-title">{{$t('carousel_video')}}</div>
-        </div>
+        </div> -->
         <div class="video-placeholder f ac xc">
           <!-- <div style="color: var(--ds-gray-500); font-size: 16px;">视频内容区域</div> -->
           <video 
